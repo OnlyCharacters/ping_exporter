@@ -40,3 +40,12 @@ clone this repository, build it.
 go build main.go
 ./main -c /path/to/config.json
 ```
+
+metrics be like
+
+```shell
+$ curl http://127.0.0.1:8037/metrics
+tcping_latency{host="www.189.cn",isv6="false",name="CT"} 11
+tcping_latency{host="www.chinaunicom.com.cn",isv6="false",name="CU"} 7
+tcping_latency{host="www.10086.cn",isv6="false",name="CM"} 20
+```
